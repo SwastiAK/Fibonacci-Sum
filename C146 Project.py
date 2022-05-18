@@ -12,15 +12,14 @@ root = Tk()
 root.title("Fibonacci")
 root.geometry("400x400")
 
-enter_no = Enter(root)
+enter_no = Entry(root)
 label1 = Label(root, text = "Fibonacci Series : ")
 
 label2 = Label(root, text = "Fibonacci Sum : ")
 
 def Fibonacci():
-    input_no = int(enter_get.no())
+    input_no = int(enter_no.get())
     
-    num = 10
     first_no = 0
     second_no = 1
     sum = 0
